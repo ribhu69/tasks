@@ -16,16 +16,37 @@ public class basics {
 
     static double reverseNumber (double number)
     {
-        int flag=0;
+        int flag=0, decimalCount, reverseCount , lengthNumber ;
         if(number<0) {
             number *= -1;
             flag = 1;
         }
+
+        //String implementation
+//        String floatingNum = String.valueOf(number);
+//        StringBuilder floatingNumber = new StringBuilder(floatingNum);
+//        floatingNumber = floatingNumber.reverse();
+//        floatingNum = floatingNumber.toString();
+//        number = Double.parseDouble(floatingNum);
+
         String floatingNum = String.valueOf(number);
-        StringBuilder floatingNumber = new StringBuilder(floatingNum);
-        floatingNumber = floatingNumber.reverse();
-        floatingNum = floatingNumber.toString();
-        number = Double.parseDouble(floatingNum);
+        lengthNumber = floatingNum.length();
+        decimalCount = (floatingNum.length()-floatingNum.indexOf("."))-1;
+        reverseCount = decimalCount;
+        while(decimalCount>0)
+        {
+            number*=10;
+            decimalCount--;
+        }
+        number=Math.round(number);
+        number = reverseNumber((int)number);
+        reverseCount = lengthNumber-reverseCount;
+        reverseCount-=1;
+        while(reverseCount>0)
+        {
+            number/=10;
+            reverseCount--;
+        }
 
         if(flag==1)
         {
@@ -72,3 +93,9 @@ public class basics {
 
     }
 }
+
+
+
+
+
+
