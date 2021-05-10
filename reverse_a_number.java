@@ -64,6 +64,10 @@ public class basics {
                 System.out.println("Enter the number");
                 floatingNumber = sc.nextDouble();
                 System.out.println(reverseNumber(floatingNumber));
+                break;
+
+            default:
+                System.out.println("Enter a Valid Input");
         }
 
     }
