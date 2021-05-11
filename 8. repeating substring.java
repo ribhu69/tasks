@@ -4,6 +4,15 @@ import java.util.Scanner;
 
 class Main
 {
+    static String getSubString(String str, int i, int j)
+    {
+        String tempString="";
+        for(int k=i;k<j;k++)
+        {
+         tempString += String.valueOf(str.charAt(k));
+        }
+        return tempString;
+    }
     static List<String> output = new ArrayList<>();
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -17,11 +26,13 @@ class Main
         {
             for(j=l-1;j>i+1;j--)
             {
-                String curr=str.substring(i,j);
+//                String curr=str.substring(i,j);
+                String curr=getSubString(str,i,j);
                 int len=j-i, f=0;
                 for(int k=i+1;k+len<=l;k++)
                 {
-                    String tmp=str.substring(k,k+len);
+//                    String tmp=str.substring(k,k+len);
+                    String tmp= getSubString(str,k,k+len);
                     if(tmp.equals(curr))
                     {
                         f=1;
@@ -43,6 +54,5 @@ class Main
         {
             System.out.println("none");
         }
-
     }
 }
