@@ -87,8 +87,7 @@ public class userAccount {
                 charges =0.04 * amount;
                 transactionAmt = amount;
                 cashback = amount * 0.01;
-                System.out.println("arka"+transactionAmt);
-                System.out.println("arka"+cashback);
+
             }
 
             validTransaction(transactionAmt,userAccount.accountBalance, charges, cashback);
