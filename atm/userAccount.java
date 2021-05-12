@@ -53,13 +53,13 @@ public class userAccount {
                 if(amount<=100)
                 {
                     charges= amount*0.02;
-                    transactionAmt = amount + charges ;
+                    transactionAmt = amount;
                 }
 
                 if(amount>100)
                 {
                     charges=amount*0.04;
-                    transactionAmt = amount+charges;
+                    transactionAmt = amount;
 
                 }
 
