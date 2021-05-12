@@ -4,9 +4,9 @@ public class main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("WELCOME TO XYZ BANK.\nEnter Card Number\n");
-        String cardNumber = sc.nextLine();
+        Long cardNumber = sc.nextLong();
 
-        if(cardNumber.length()==12)
+        if(String.valueOf(cardNumber).length()==12)
         {
             userAccount customer = new userAccount();
             System.out.println("Choose from below Services\n1) Balance Enquiry\n2)Withdraw Amount\n" +
