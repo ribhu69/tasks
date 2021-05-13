@@ -21,7 +21,8 @@ class basics
             System.out.println("Invalid Input");
         }
         List<Integer> list1 = new ArrayList<>(set1);
-        System.out.println("largest element is "+ list1.get(k-1));
-        System.out.println("smallest element is "+ list1.get(n-k));
+        System.out.println("Kth smallest element is "+ list1.get(k-1));
+        System.out.println("Kth largest element is "+ list1.get(n-k));
+
     }
 }
