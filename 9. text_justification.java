@@ -8,12 +8,12 @@ class basics {
         int count=0,last=0, i;
         for(i=0;i<listWord.size();i++)
         {
-            count+=listWord.get(i).length();
+            int listWordLength=listWord.get(i).length();
+            count+=listWordLength;
 
             if(count+i-last>width)
             {
-
-                int wordLength = count-listWord.get(i).length();
+                int wordLength = count-listWordLength;
                 int spaceLength = width-wordLength;
                 int eachLength =1, extraLength=0 ;
 
@@ -46,7 +46,7 @@ class basics {
                 }
                 justifiedOutput.add(s.toString());
                 last=i;
-                count=listWord.get(i).length();
+                count=listWordLength;
             }
         }
 
