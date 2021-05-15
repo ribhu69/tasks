@@ -80,8 +80,12 @@ public class atm extends currentUser{
             //update the account details once exited.
                 customer.completeTransaction(allAccounts,cardNumber);
                 accounts.updateUserDetails(customer.getUserAccountBalance(),cardNumber);
+
+//            testing System.out.println(allAccounts.get(0).getUserAccountBalance());
+
                 //setting values to null
                 customer=null;
+
         }
         else
         {
