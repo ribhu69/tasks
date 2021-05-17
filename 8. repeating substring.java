@@ -2,14 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class Main
-{
+public class base {
     static String getSubString(String str, int i, int j)
     {
         String tempString="";
         for(int k=i;k<j;k++)
         {
-         tempString += String.valueOf(str.charAt(k));
+            tempString += String.valueOf(str.charAt(k));
         }
         return tempString;
     }
@@ -41,6 +40,7 @@ class Main
                 }
                 if(f!=0)
                 {
+                    i=j+1;
                     output.add(curr);
                     break;
                 }
