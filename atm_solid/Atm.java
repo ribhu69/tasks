@@ -45,7 +45,7 @@ public class Atm extends CurrentUser {
                         break;
 
                     case 5: //exit
-                        System.out.println("Thank You for Banking with Us!");
+                        customer.exitMessage();
                         break;
 
                     default:
