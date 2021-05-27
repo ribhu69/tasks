@@ -70,6 +70,57 @@ public class CourseTopicDatabase {
 
     }
 
+
+    protected void changeCourseTopic()
+    {
+        int flag=1, topicNumber;
+        System.out.println("Enter Course ID");
+        String courseId = sc.nextLine();
+        List<String> courseTopics = new ArrayList<>();
+         for(Topic i: courseTopicsList)
+         {
+
+             if(i.getCourseID().equals(courseId))
+             {
+                 courseTopics.add(i.getCourseTopicName());
+             }
+         }
+
+         for(int i=0;i<courseTopics.size();i++)
+         {
+             System.out.println((i+1)+") "+courseTopics.get(i));
+         }
+
+        System.out.println("Select Topic Number: ");
+
+        do {
+            topicNumber = sc.nextInt();
+            if(topicNumber<=0 || topicNumber>courseTopics.size())
+            {
+                System.out.println("Please Enter a valid Choice");
+            }
+            else flag=0;
+
+        }while(flag!=0);
+
+
+        String topicName = courseTopics.get(topicNumber-1);
+
+        System.out.println("Enter New Topic Name");
+        sc.nextLine();
+        String newTopicName = sc.nextLine();
+
+        for(Topic i: courseTopicsList)
+        {
+            if(i.getCourseID().equals(courseId) && i.getCourseTopicName().equals(topicName))
+            {
+                i.setCourseTopicName(newTopicName);
+//                return;
+            }
+        }
+
+
+    }
     private void addCourseTopicToList(String topicName,String courseName, String courseID)
     {
         courseTopicsList.add(new Topic(topicName,courseName,courseID));
