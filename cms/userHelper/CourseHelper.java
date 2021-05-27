@@ -1,13 +1,18 @@
 package userHelper;
 
 import database.CourseDatabase;
+import utilityClasses.CourseTopicUtility;
 
 import java.util.List;
 import java.util.Scanner;
 
 public class CourseHelper extends CourseDatabase {
 
+
+
     Scanner sc = new Scanner(System.in);
+
+    CourseTopicUtility courseTopicUtility = new CourseTopicUtility();
     public String  addCourse() {return super.addCourse();}
     public String deleteCourse() {return super.deleteCourse();}
 
@@ -27,7 +32,8 @@ public class CourseHelper extends CourseDatabase {
                 break;
 
             case 2:
-                super.changeCourseTopic();
+//                super.changeCourseTopic();
+                courseTopicUtility.changeCourseTopic();
                 break;
 
             case 3:
