@@ -1,0 +1,30 @@
+Course Name,Course ID,Course Teacher ID,Student ID,Scored Exam Marks
+Applied Science,ge101,2000,100101,35
+Applied Science,ge101,2000,100103,22
+Applied Science,ge101,2000,100105,18
+Applied Science,ge101,2000,100107,28
+Applied Science,ge101,2000,100104,59
+Engg Mathematics,me101,1000,100101,39
+Engg Mathematics,me101,1000,100102,37
+Engg Mathematics,me101,1000,100104,30
+Engg Mathematics,me101,1000,100106,29
+Engg Mathematics,me101,1000,100107,35
+Engg Mathematics,me101,1000,100103,39
+Engg Physics,ge103,5000,100103,18
+Engg Physics,ge103,5000,100101,22
+Engg Physics,ge103,5000,100102,34
+Engg Physics,ge103,5000,100106,20
+Engg Physics,ge103,5000,100107,18
+Engg Physics,ge103,5000,100105,30
+Engg Mechanics,cv108,4000,100102,39
+Engg Mechanics,cv108,4000,100103,30
+Engg Mechanics,cv108,4000,100105,28
+Engg Mechanics,cv108,4000,100104,22
+Engg Mechanics,cv108,4000,100107,23
+Engg Mechanics,cv108,4000,100106,34
+x,sc102,6000,100101,37
+x,sc102,6000,100102,32
+x,sc102,6000,100103,26
+x,sc102,6000,100106,29
+x,sc102,6000,100107,38
+x,sc102,6000,100104,30
